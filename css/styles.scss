@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  &__logo {
+
+  }
+  &__title {
+
+  }
+  &__list {
+
+  }
+  &__button {
+
+  }
+}
+.container {
+  .section {
+    &__welcome {
+
+    }
+    &__features {
+
+    }
+    &__download {
+
+    }
+    &__faq {
+
+    }
+    &__contact {
+
+    }
+  }
+  .article {
+    &__chrome {
+
+    }
+    &__firefox {
+
+    }
+    &__opera {
+
+    }
+  }
+}
+.footer {
+  &__list {
+    
+  }
+}
