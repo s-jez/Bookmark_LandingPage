@@ -1,20 +1,44 @@
+:root {
+  --text-color: hsl(229, 31%, 21%);
+  --text-blue: hsl(231, 69%, 60%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 .nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 2rem 10rem;
   &__logo {
-
+    display: flex;
+      text-decoration: none;
+      color: var(--text-color);
+  }
+  &__rounded {
+    margin-right: .5rem;
+    padding: 0 .25rem;
+    background-color: var(--text-blue);
+    border-radius: 10px;
   }
   &__title {
-
+    
   }
   &__list {
-
+    display: flex;
+    list-style: none;
+    li {
+      margin-left: 2.5rem;
+    }
   }
   &__button {
-
+    background-color: red;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
   }
 }
 .container {

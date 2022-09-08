@@ -1,5 +1,41 @@
+:root {
+  --text-color: hsl(229, 31%, 21%);
+  --text-blue: hsl(231, 69%, 60%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 2rem 10rem;
+}
+.nav__logo {
+  display: flex;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.nav__rounded {
+  margin-right: 0.5rem;
+  padding: 0 0.25rem;
+  background-color: var(--text-blue);
+  border-radius: 10px;
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+.nav__list li {
+  margin-left: 2.5rem;
+}
+.nav__button {
+  background-color: red;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
 }/*# sourceMappingURL=styles.css.map */
