@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 :root {
   --text-color: hsl(229, 31%, 21%);
   --text-blue: hsl(231, 69%, 60%);
+  --primary-red: hsl(0, 94%, 66%);
+  --primary-blue: hsl(231, 69%, 60%);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
 }
 .nav {
   display: flex;
@@ -15,30 +22,45 @@
   padding: 2rem 10rem;
   &__logo {
     display: flex;
-      text-decoration: none;
-      color: var(--text-color);
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
   }
   &__rounded {
-    margin-right: .5rem;
-    padding: 0 .25rem;
+    margin-right: .8rem;
+    padding: .25rem .6rem;
     background-color: var(--text-blue);
-    border-radius: 10px;
+    border-radius: 30px;
   }
   &__title {
-    
+    font-weight: 500;
   }
   &__list {
     display: flex;
+    align-items: center;
     list-style: none;
     li {
       margin-left: 2.5rem;
+      letter-spacing: 0.040rem;
+      font-size: .9rem;
+    }
+    a {
+      text-decoration: none;
+      color: var(--text-color);
     }
   }
   &__button {
-    background-color: red;
+    background-color: var(--primary-red);
     border: 0;
-    color: #fff;
+    color: #fff !important;
     text-transform: uppercase;
+    padding: .5rem 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 .25rem 1rem rgba(#000, .2);
+  }
+  &__icon {
+    color: white;
+    font-size: .8rem;
   }
 }
 .container {

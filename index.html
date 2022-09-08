@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Simple Bookmark Manager</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f0408ff158.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <header>
       <nav class="nav">
-        <a href="#" class="nav__logo">
+        <div class="nav__logo">
           <div class="nav__rounded">
-            <i class="nav__icon">X</i>
+            <i class="fa-solid fa-bookmark nav__icon"></i>
           </div>
           <span class="nav__title">BookMark</span>
-        </a>
+        </div>
         <ul class="nav__list">
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Contact</li>
-          <li><button class="nav__button">Login</button></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#" class="nav__button">Login</a></li>
         </ul>
       </nav>
     </header>

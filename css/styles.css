@@ -1,12 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 :root {
   --text-color: hsl(229, 31%, 21%);
   --text-blue: hsl(231, 69%, 60%);
+  --primary-red: hsl(0, 94%, 66%);
+  --primary-blue: hsl(231, 69%, 60%);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
 }
 
 .nav {
@@ -17,25 +25,43 @@
 }
 .nav__logo {
   display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--text-color);
 }
 .nav__rounded {
-  margin-right: 0.5rem;
-  padding: 0 0.25rem;
+  margin-right: 0.8rem;
+  padding: 0.25rem 0.6rem;
   background-color: var(--text-blue);
-  border-radius: 10px;
+  border-radius: 30px;
+}
+.nav__title {
+  font-weight: 500;
 }
 .nav__list {
   display: flex;
+  align-items: center;
   list-style: none;
 }
 .nav__list li {
   margin-left: 2.5rem;
+  letter-spacing: 0.04rem;
+  font-size: 0.9rem;
+}
+.nav__list a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 .nav__button {
-  background-color: red;
+  background-color: var(--primary-red);
   border: 0;
-  color: #fff;
+  color: #fff !important;
   text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
+}
+.nav__icon {
+  color: white;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=styles.css.map */
