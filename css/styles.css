@@ -64,4 +64,52 @@ body {
 .nav__icon {
   color: white;
   font-size: 0.8rem;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+.container .section {
+  position: relative;
+  width: 100%;
+  padding: 15rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container .section__welcome {
+  width: 100%;
+}
+.container .section__welcome h1 {
+  font-size: 2.2rem;
+}
+.container .section__welcome h1, .container .section__welcome h2, .container .section__welcome h3, .container .section__welcome h4 {
+  color: var(--text-color);
+}
+.container .section__welcome p {
+  color: rgb(133, 133, 133);
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  margin: 1.5rem 0;
+  max-width: 300px;
+}
+.container .section__welcome .btn {
+  width: 150px;
+  height: 40px;
+  margin-right: 15px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0.4rem 1rem rgba(158, 158, 158, 0.2);
+}
+.container .section__welcome .btn--blue {
+  background-color: var(--primary-blue);
+  color: white;
+}
+.container .section__welcome .btn--white {
+  background-color: rgb(215, 215, 215);
+}
+.container .section__welcome .image__hero {
+  position: absolute;
+  top: 15%;
+  left: 60%;
 }/*# sourceMappingURL=styles.css.map */
