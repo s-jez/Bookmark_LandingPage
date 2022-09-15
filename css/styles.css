@@ -17,6 +17,14 @@ body {
   font-size: 18px;
 }
 
+h1, h2, h3, h4 {
+  color: var(--text-color);
+}
+
+p {
+  color: rgb(133, 133, 133);
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -66,6 +74,43 @@ body {
   font-size: 0.8rem;
 }
 
+.feature {
+  text-align: center;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.card__back {
+  width: 36%;
+  height: 300px;
+  background-color: var(--primary-blue);
+  position: absolute;
+  top: 25%;
+  right: 80%;
+  z-index: -1;
+  border-radius: 40px 999em 999em 40px;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  margin-right: 15px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0.4rem 1rem rgba(158, 158, 158, 0.2);
+}
+.btn--blue {
+  background-color: var(--primary-blue);
+  color: white;
+}
+.btn--white {
+  background-color: rgb(215, 215, 215);
+}
+
 .container {
   max-width: 1440px;
   margin: auto;
@@ -83,30 +128,11 @@ body {
 .container .section__welcome h1 {
   font-size: 2.2rem;
 }
-.container .section__welcome h1, .container .section__welcome h2, .container .section__welcome h3, .container .section__welcome h4 {
-  color: var(--text-color);
-}
 .container .section__welcome p {
-  color: rgb(133, 133, 133);
   font-size: 1rem;
   padding: 0.5rem 0;
   margin: 1.5rem 0;
-  max-width: 300px;
-}
-.container .section__welcome .btn {
-  width: 150px;
-  height: 40px;
-  margin-right: 15px;
-  border: 0;
-  border-radius: 5px;
-  box-shadow: 0 0.4rem 1rem rgba(158, 158, 158, 0.2);
-}
-.container .section__welcome .btn--blue {
-  background-color: var(--primary-blue);
-  color: white;
-}
-.container .section__welcome .btn--white {
-  background-color: rgb(215, 215, 215);
+  max-width: 600px;
 }
 .container .section__welcome .image__hero {
   position: absolute;
@@ -126,7 +152,17 @@ body {
 .container .section__features {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
-  text-align: center;
+}
+.container .section__features h2, .container .section__features h3 {
+  margin: 2rem 0;
+}
+.container .section__features hr {
+  margin: 1.5rem 0;
+}
+.container .section__features p {
+  max-width: 600px;
   margin: auto;
+}
+.container .section__features button {
+  margin: 1rem 0;
 }/*# sourceMappingURL=styles.css.map */
