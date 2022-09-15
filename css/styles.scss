@@ -157,29 +157,104 @@ p {
       }
     }
     &__download {
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h3 {
+        margin: 1.5rem 0;
+      }
+      p {
+        max-width: 600px;
+        text-align: center;
+      }
+      article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2.5rem 0;
+        background-color: aliceblue;
+        padding: 3rem;
+        img {
+          width: 128px;
+          margin:1.52rem 0;
+        }
+        span {
+          font-size: 1.2rem;
+          color: var(--text-color);
+        }
+        p, span {
+          margin: .25rem 0;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+    &__article {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
     }
     &__faq {
-
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        max-width: 600px;
+        margin: 1.5rem 0;
+        text-align: center;
+      }
+      h4 {
+        font-size: 1.4rem;
+      }
     }
-    &__contact {
-
-    }
-  }
-  .article {
-    &__chrome {
-
-    }
-    &__firefox {
-
-    }
-    &__opera {
-
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
+.section__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-blue);
+    color: #fff;
+    margin-top: 2rem;
+    padding: 8rem 0;
+    h4 {
+      font-size: 1.6rem;
+      color: #fff;
+      margin: 2rem 0;
+    }
+    input {
+      width: 280px;
+      height: 40px;
+      margin-right: 1.5rem;
+      border-radius: 6px;
+      border: 0;
+      outline: 1px solid #333;
+    }
+    button {
+      background-color: var(--primary-red);
+      color: #fff;
+    }
+}
 .footer {
-  &__list {
-    
+  background-color: var(--text-color);
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      padding: 1.5rem 0;
+      li {
+        color: #fff;
+      }
   }
 }

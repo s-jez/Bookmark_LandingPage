@@ -165,4 +165,106 @@ p {
 }
 .container .section__features button {
   margin: 1rem 0;
+}
+.container .section__download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .section__download h3 {
+  margin: 1.5rem 0;
+}
+.container .section__download p {
+  max-width: 600px;
+  text-align: center;
+}
+.container .section__download article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0;
+  background-color: aliceblue;
+  padding: 3rem;
+}
+.container .section__download article img {
+  width: 128px;
+  margin: 1.52rem 0;
+}
+.container .section__download article span {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+.container .section__download article p, .container .section__download article span {
+  margin: 0.25rem 0;
+}
+.container .section__download article p {
+  text-align: center;
+}
+.container .section__article {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.container .section__faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .section__faq p {
+  max-width: 600px;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.container .section__faq h4 {
+  font-size: 1.4rem;
+}
+.container .section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-blue);
+  color: #fff;
+  margin-top: 2rem;
+  padding: 8rem 0;
+}
+.section__contact h4 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin: 2rem 0;
+}
+.section__contact input {
+  width: 280px;
+  height: 40px;
+  margin-right: 1.5rem;
+  border-radius: 6px;
+  border: 0;
+  outline: 1px solid #333;
+}
+.section__contact button {
+  background-color: var(--primary-red);
+  color: #fff;
+}
+
+.footer {
+  background-color: var(--text-color);
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1.5rem 0;
+}
+.footer__list li {
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */
