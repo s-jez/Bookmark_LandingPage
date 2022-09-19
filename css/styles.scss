@@ -194,7 +194,6 @@ p {
         justify-content: center;
         align-items: center;
         margin: 2.5rem 0;
-        background-color: aliceblue;
         padding: 3rem;
         img {
           width: 128px;
@@ -216,6 +215,15 @@ p {
       display: flex;
       justify-content: space-around;
       gap: 10px;
+      img {
+        margin: 1.25rem 0;
+      }
+      p {
+        margin: .5rem 0;
+      }
+      button {
+        margin: 1rem 0;
+      }
     }
     &__faq {
       display: flex;
@@ -289,5 +297,28 @@ p {
       a:hover {
         color: var(--primary-red);
       }
+  }
+}
+@media (max-width: 1020px) {
+  .nav {
+    padding: 1rem .5rem;
+    flex-wrap: wrap;
+  }
+  .container {
+    &__welcome {
+      width: 50%;
+    }
+    .welcome {
+      width: 50%;
+      margin-left: 2rem;
+    }
+    &__features {
+
+    }
+    .card {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

@@ -204,7 +204,6 @@ p {
   justify-content: center;
   align-items: center;
   margin: 2.5rem 0;
-  background-color: aliceblue;
   padding: 3rem;
 }
 .container .section__download article img {
@@ -225,6 +224,15 @@ p {
   display: flex;
   justify-content: space-around;
   gap: 10px;
+}
+.container .section__article img {
+  margin: 1.25rem 0;
+}
+.container .section__article p {
+  margin: 0.5rem 0;
+}
+.container .section__article button {
+  margin: 1rem 0;
 }
 .container .section__faq {
   display: flex;
@@ -299,4 +307,23 @@ p {
 }
 .footer__list a:hover {
   color: var(--primary-red);
+}
+
+@media (max-width: 1020px) {
+  .nav {
+    padding: 1rem 0.5rem;
+    flex-wrap: wrap;
+  }
+  .container__welcome {
+    width: 50%;
+  }
+  .container .welcome {
+    width: 50%;
+    margin-left: 2rem;
+  }
+  .container .card {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
