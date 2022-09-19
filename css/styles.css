@@ -60,14 +60,22 @@ p {
   text-decoration: none;
   color: var(--text-color);
 }
+.nav__list a:hover {
+  color: var(--primary-red);
+}
 .nav__button {
   background-color: var(--primary-red);
   border: 0;
-  color: #fff !important;
+  color: #fff;
   text-transform: uppercase;
   padding: 0.5rem 1.5rem;
   border-radius: 6px;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
+}
+.nav__button:hover {
+  background-color: white;
+  color: var(--primary-red);
+  border: 1px solid var(--primary-red);
 }
 .nav__icon {
   color: white;
@@ -107,8 +115,19 @@ p {
   background-color: var(--primary-blue);
   color: white;
 }
+.btn--blue:hover {
+  background-color: white;
+  border: 1px solid var(--primary-blue);
+  color: var(--primary-blue);
+  cursor: pointer;
+}
 .btn--white {
   background-color: rgb(215, 215, 215);
+}
+.btn--white:hover {
+  background-color: white;
+  border: 1px solid #000;
+  cursor: pointer;
 }
 
 .container {
@@ -251,9 +270,15 @@ p {
   border: 0;
   outline: 1px solid #333;
 }
-.section__contact button {
+.section__contact .btn {
   background-color: var(--primary-red);
   color: #fff;
+}
+.section__contact .btn:hover {
+  background-color: white;
+  border: 1px solid var(--primary-red);
+  color: var(--primary-red);
+  cursor: pointer;
 }
 
 .footer {
@@ -268,4 +293,10 @@ p {
 .footer__list a {
   color: #fff;
   text-decoration: none;
+}
+.footer__list span {
+  color: #fff;
+}
+.footer__list a:hover {
+  color: var(--primary-red);
 }/*# sourceMappingURL=styles.css.map */

@@ -53,16 +53,24 @@ p {
     a {
       text-decoration: none;
       color: var(--text-color);
+      &:hover {
+        color: var(--primary-red);
+      }
     }
   }
   &__button {
     background-color: var(--primary-red);
     border: 0;
-    color: #fff !important;
+    color: #fff;
     text-transform: uppercase;
     padding: .5rem 1.5rem;
     border-radius: 6px;
     box-shadow: 0 .25rem 1rem rgba(#000, .2);
+    &:hover {
+      background-color: white;
+      color: var(--primary-red);
+      border: 1px solid var(--primary-red);
+    }
   }
   &__icon {
     color: white;
@@ -98,9 +106,21 @@ p {
   &--blue {
     background-color: var(--primary-blue);
     color: white;
+    &:hover {
+      background-color: white;
+      border: 1px solid var(--primary-blue);
+      color: var(--primary-blue);
+      cursor: pointer;
+    } 
   }
+  
   &--white {
     background-color: rgb(215, 215, 215);
+    &:hover {
+      background-color: white;
+      border:1px solid #000;
+      cursor: pointer;
+    }
   }
 }
 .container {
@@ -241,9 +261,15 @@ p {
       border: 0;
       outline: 1px solid #333;
     }
-    button {
+    .btn {
       background-color: var(--primary-red);
       color: #fff;
+      &:hover {
+        background-color: white;
+        border: 1px solid var(--primary-red);
+        color: var(--primary-red);
+        cursor: pointer;
+      }
     }
 }
 .footer {
@@ -256,6 +282,12 @@ p {
       a {
         color: #fff;
         text-decoration: none;
+      }
+      span { 
+        color: #fff;
+      }
+      a:hover {
+        color: var(--primary-red);
       }
   }
 }
