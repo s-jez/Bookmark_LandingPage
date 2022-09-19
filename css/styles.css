@@ -265,6 +265,7 @@ p {
   list-style: none;
   padding: 1.5rem 0;
 }
-.footer__list li {
+.footer__list a {
   color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

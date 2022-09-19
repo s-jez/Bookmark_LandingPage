@@ -253,8 +253,9 @@ p {
       justify-content: space-between;
       list-style: none;
       padding: 1.5rem 0;
-      li {
+      a {
         color: #fff;
+        text-decoration: none;
       }
   }
 }
